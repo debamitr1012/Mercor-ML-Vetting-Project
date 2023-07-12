@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Automated Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>GitHub Automated Analysis</h1>
+    <form method="POST" action="/analyze">
+        <label for="github_url">Enter GitHub User URL:</label><br>
+        <input type="text" id="github_url" name="github_url" required><br><br>
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>
